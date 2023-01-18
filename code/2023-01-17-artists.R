@@ -5,6 +5,7 @@
 library(tidyverse)
 library(camcorder)
 library(treemapify)
+
 gg_record(
   dir = file.path(tempdir(), "recording"), 
   device = "png", # we need to set the Cairo device
@@ -112,3 +113,9 @@ alt_text <- "A faceted set of treemaps showing the varying distribution of the p
 ggsave(filename = file.path("plots/", 
                             "202302_artists.png"), 
        dpi = 400, width = 10, height = 6, bg = palette$bg)
+
+gg_playback(name = file.path("making_of/", "202302_artists.gif"),
+            first_image_duration = 4,
+            last_image_duration = 12,
+            frame_duration = .5)
+gg_stop_recording()
