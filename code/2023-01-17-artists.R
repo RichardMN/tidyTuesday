@@ -1,6 +1,5 @@
-# Tidy Tuesday 2023-01-10
-# Birds
-# Inspired - and in a few cases copied from - Cara Thompson's cleaner plot
+# Tidy Tuesday 2023-01-17
+# Artists
 
 library(tidyverse)
 library(camcorder)
