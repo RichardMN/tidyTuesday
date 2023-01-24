@@ -12,4 +12,11 @@ This is not such a clear chart but brings a touch of visual. The [arthistory dat
 
 ![Treemaps showing distribution of artists nationality in art history textbooks between 1926 and 2020](plots/202302_artists.png)
 
+## 2023-01-24
+
+This week we are working with data from Dan Oehm's [alone](https://github.com/doehm/alone) data package for R. I had not heard of the show before seeing this data package. I like some of what Oehm already presents. I was curious to look at whether great minds might think alike - what are the items which all the winners took with them? What about first runners-up?
+
+![Horizontal bar chart showing loadouts of winners and first runners-up acros 9 seasons of Alone](plots/202303_alone.png)
+
+This could be tidier. It would be interesting to compare with how prevalent these items are across all contestants. My palette choice needs work. I fiddled with fonts but am not quite happy with it. Still, this makes the initial question somewhat accessible.
 
