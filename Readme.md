@@ -20,3 +20,21 @@ This week we are working with data from Dan Oehm's [alone](https://github.com/do
 
 This could be tidier. It would be interesting to compare with how prevalent these items are across all contestants. My palette choice needs work. I fiddled with fonts but am not quite happy with it. Still, this makes the initial question somewhat accessible.
 
+## 2023-01-31
+
+This is not a tidy TidyTuesday week. The data is from a study on the home ranges of pet cats.
+
+> Kays R, Dunn RR, Parsons AW, Mcdonald B, Perkins T, Powers S, Shell L, McDonald JL, Cole H, Kikillus H, Woods L, Tindle H, Roetman P (2020) The small home ranges and large local ecological impacts of pet cats. Animal Conservation. [doi:10.1111/acv.12563](http://dx.doi.org/10.1111/acv.12563)
+
+> McDonald JL, Cole H (2020) Data from: The small home ranges and large local ecological impacts of pet cats [United Kingdom]. Movebank Data Repository. [doi:10.5441/001/1.pf315732](http://dx.doi.org/10.5441/001/1.pf315732)
+
+
+We can tie tracking data to information about the cats (reproductive state, age, hours indoors, number of other cats in the house, what they're fed at home, how many animals they're thought to catch, whether they're allowed to hunt...)
+
+![Dual chart showing: (at left) a map of Cornwall, UK, with small specks indicating the very small tracks of domestic cats; (at right) a beeswarm plot which shows little correlation between how much time cats spend indoors during the day and how quickly they move when outside.](plots/202304_cats.png)
+
+This let me experiment with mapping, `{ggbeeswarm}` , and using `{patchwork}`. I didn't get `{patchwork}` and `{camcorder}` to work together so the making of animation doesn't show the final plot.
+
+I wanted to try making a plot overlaying all the tracks, by subtracting the centroid of each then adding one centroid (to keep the projection about right) but couldn't get my `st` calculations to work. (Also, `st_length` generates units which are weird).
+
+I struggled with setting limits on scales in the beeswarm plot.
