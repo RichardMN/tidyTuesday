@@ -38,3 +38,13 @@ This let me experiment with mapping, `{ggbeeswarm}` , and using `{patchwork}`. I
 I wanted to try making a plot overlaying all the tracks, by subtracting the centroid of each then adding one centroid (to keep the projection about right) but couldn't get my `st` calculations to work. (Also, `st_length` generates units which are weird).
 
 I struggled with setting limits on scales in the beeswarm plot.
+
+## 2023-03-21
+
+Looking at data from the [Programming Language DataBase](https://pldb.com/index.html) I was curious to see how much age or youth lets programming languages dominate popularity in GitHub.
+
+Unsurprisingly to anyone who has spent some time working in GitHub, JavaScript, HTML and Python are clear winners. I was somewhat surprised that Java was (still) so popular.
+
+This plot still isn't clean but it's let me remember (a bit) how to use `{ggrepel}` and found a new use for something out of `{scales}`.
+
+![Scatterplot comparing when languages appeared and how often they are used in GitHub. Regular expressions, Fortran, Assembly are old languages and rarely used. JaveScript, Java, HTML and Python (all since 1990) have more than 9 million repos; most other languages have 5 million or fewer](plots/202312_programming.png)
